@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄水電聯盟｜菁英夥伴招募計劃</title>
+    <style>
+        /* CSS Reset & General Setup */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0; /* Full bleed layout control via padding */
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft JhengHei", "Heiti TC", sans-serif;
+            color: #2c3e50;
+            background-color: #f4f7f6; /* Soft, professional cool slate tint */
+            line-height: 1.6;
+            font-size: 11pt;
+        }
+
+        /* Hero Section (First Page Top Banner) */
+        .hero {
+            background-color: #1a365d; /* Deep corporate blue */
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 5px solid #d69e2e; /* Muted gold accent */
+        }
+        
+        .hero h1 {
+            font-size: 24pt;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .hero p {
+            font-size: 13pt;
+            margin: 0;
+            color: #e2e8f0;
+            font-weight: 300;
+        }
+
+        /* Main Container */
+        .container {
+            padding: 30px 40px;
+        }
+
+        /* Section Block Styling */
+        .section {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+
+        /* Headings */
+        h2 {
+            font-size: 15pt;
+            color: #1a365d;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #d69e2e; /* Left border accent */
+            page-break-after: avoid;
+        }
+
+        h3 {
+            font-size: 12pt;
+            color: #2b6cb0;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            page-break-after: avoid;
+        }
+
+        /* Paragraphs & Text */
+        p {
+            margin: 0 0 12px 0;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            font-size: 10.5pt;
+        }
+
+        /* Core Skills Table Style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th {
+            background-color: #2b6cb0;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px 12px;
+            font-size: 10.5pt;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 10pt;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7fafc;
+        }
+
+        /* Lists */
+        ul {
+            margin: 0 0 15px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Custom Split View for Grid alternative (using display: table) */
+        .split-layout {
+            display: table;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .split-col {
+            display: table-cell;
+            width: 50%;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        /* Visual Badges */
+        .badge {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 9pt;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .badge-salary {
+            background-color: #feebc8;
+            color: #c05621;
+        }
+
+        /* Call To Action Button */
+        .cta-container {
+            text-align: center;
+            margin-top: 30px;
+            page-break-inside: avoid;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #d69e2e;
+            color: #ffffff;
+            font-size: 13pt;
+            font-weight: bold;
+            padding: 12px 35px;
+            text-decoration: none;
+            border-radius: 4px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Footer Info */
+        .contact-info {
+            background-color: #2d3748;
+            color: #ffffff;
+            padding: 20px 30px;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
+
+        .contact-info table {
+            margin: 0;
+        }
+
+        .contact-info td {
+            border: none;
+            color: #e2e8f0;
+            padding: 5px 0;
+        }
+
+        /* Avoid broken elements */
+        .avoid-break {
+            page-break-inside: avoid;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Banner Section -->
+    <div class="hero">
+        <h1>英雄水電聯盟｜菁英夥伴招募計劃</h1>
+        <p>用專業點亮城市，用技術築起未來。翻轉傳統工程，成就職人驕傲！</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- About & Vision -->
+        <div class="section">
+            <h2>關於我們與未來願景（About & Vision）</h2>
+            <div class="highlight-box">
+                <strong>翻轉傳統，打造水電產業的現代化標竿</strong><br>
+                英雄水電聯盟致力於打破傳統水電工程資訊不透明與破碎管理的現況。我們透過數位化調度、標準化施工流程與透明的晉升管道，將傳統工程產業升級為現代化的「工程職人聯盟」。
+            </div>
+            <p><strong>未來發展藍圖：</strong> 隨著綠建築、智慧家居（Smart Home）與工業自動化的普及，聯盟已全面佈局「節能工程」與「智慧電網維護」。加入我們，您學到的不只是傳統水電，更是未來20年不可或缺的綠領高階技術。</p>
+        </div>
+
+        <!-- Job Responsibilities -->
+        <div class="section">
+            <h2>招募職缺與核心工作內容（Responsibilities）</h2>
+            <p>本聯盟承接各類住宅、商辦及廠房之新建與維護工程，依專業分工招募以下範疇之技術人才：</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">專業類別</th>
+                        <th style="width: 70%;">核心工作內容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>電纜配線與弱電工程</strong><br><span class="badge">拉線專才</span></td>
+                        <td>各類電力系統、控制線路、網路與弱電系統之管路配置與拉線佈設。依據施工圖說進行精準放線、穿線、配盤與負載測試。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>照明與電器系統安裝</strong><br><span class="badge">電燈專才</span></td>
+                        <td>室內外各類燈具、智慧照明控制系統之安裝、調試與故障排除。配合室內設計與業主需求，提供專業的迴路規劃與安全建議。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>給排水與衛生設備</strong><br><span class="badge">水務專才</span></td>
+                        <td>冷熱水管路、排水管路、消防管線之配置、壓接、焊接與漏水測試。各類衛浴設備、加壓馬達、淨水系統之安裝與系統整合。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Compensation & Regulations -->
+        <div class="section avoid-break">
+            <h2>薪資待遇與工時制度（Compensation & Hours）</h2>
+            <p>我們深信，專業的技術值得最體面的報酬。拒絕含糊，一切透明：</p>
+            <ul>
+                <li><span class="badge badge-salary">熟手 / 師傅級</span> <strong>日薪 NT$ 3,000 ~ NT$ 4,500</strong> 或轉保障月薪 NT$ 65,000 ~ NT$ 90,000 以上 + 案場完工獎金。</li>
+                <li><span class="badge badge-salary">半技師</span> <strong>日薪 NT$ 2,200 ~ NT$ 2,800</strong> 或保障月薪 NT$ 45,000 ~ NT$ 55,000，並提供培訓轉正機制。</li>
+                <li><strong>標準工時：</strong> 每日標準工時 8 小時（08:00 - 17:00，含中午休息 1 小時）。週休二日（採排班制或固定週休，依案場進度調整）。</li>
+            </ul>
+        </div>
+
+        <!-- Government Compliance -->
+        <div class="section avoid-break">
+            <h2>政府法規符合與安全承諾（Compliance & Safety）</h2>
+            <div class="highlight-box" style="background-color: #f6ad55; border-left-color: #dd6b20; color: #2d3748;">
+                <strong>「合規，是我們對夥伴最基本的尊重；安全，是我們不可妥協的底線。」</strong>
+            </div>
+            <p>我們嚴格遵守中華民國勞動基準法及職業安全衛生法規，讓您在前方拼搏毫無後顧之憂：</p>
+            <ul>
+                <li><strong>法定保障全員到位：</strong> 入職即依法投保<strong>勞保、健保、勞退 6% 提撥</strong>。</li>
+                <li><strong>商業雙重防護：</strong> 額外加保高額<strong>團體傷害保險</strong>與<strong>第三人責任險</strong>，全面分擔職災風險。</li>
+                <li><strong>職業安全衛生：</strong> 依規定期提供全套符合 CNS 標準之個人防護具（安全帽、安全帶、防滑絕緣鞋等），並落實案場危害告知與安全巡檢。</li>
+            </ul>
+        </div>
+
+        <!-- Career Path -->
+        <div class="section avoid-break">
+            <h2>職涯發展與未來藍圖（Career Path）</h2>
+            <p>在英雄水電聯盟，您不會一輩子只在現場拉線。我們提供清晰的<strong>雙軌制職涯發展路徑</strong>：</p>
+            
+            <div class="split-layout">
+                <div class="split-col" style="border-right: 1px solid #e2e8f0;">
+                    <h3 style="color: #2b6cb0;">【 技術專家職系 】</h3>
+                    <p>專精工藝，成為技術總監</p>
+                    <ul>
+                        <li>高級工程師 / 師傅</li>
+                        <li>技術顧問 / 總技術長</li>
+                        <li><strong>專業證照獎勵：</strong> 鼓勵並全額補助夥伴考取國家級證照（甲/乙種電匠），考取後立即調薪。</li>
+                    </ul>
+                </div>
+                <div class="split-col">
+                    <h3 style="color: #c05621;">【 管理合夥職系 】</h3>
+                    <p>內部創業，成為管理階層</p>
+                    <ul>
+                        <li>案場主任 / 工務經理</li>
+                        <li>聯盟分店合夥人</li>
+                        <li><strong>內部創業計畫：</strong> 表現優異且具領導能力的夥伴，未來可由聯盟出資協助拓展分店，共享盈餘分紅。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action & Contact -->
+        <div class="cta-container">
+            <a href="#" class="cta-button">立即填寫線上應徵表單</a>
+        </div>
+
+        <div class="contact-info avoid-break">
+            <h3 style="color: #ffffff; margin-top: 0; border: none; padding: 0;">聯絡我們（Contact Us）</h3>
+            <table>
+                <tr>
+                    <td style="width: 100px; font-weight: bold;">應徵專線：</td>
+                    <td>02-XXXX-XXXX / 09XX-XXX-XXX （招募負責人：林經理）</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">官方 LINE：</td>
+                    <td>@heroplumber_hr （24小時可傳簡歷預約面試）</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">面試地址：</td>
+                    <td>[填寫公司地址]</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
